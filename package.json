@@ -1,0 +1,52 @@
+{
+  "name": "bem-pug-sass",
+  "version": "1.0.0",
+  "description": "Starter template BEM-PUG-SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shakhrom Mukumov",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "autoprefixer": "^10.4.7",
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.27.10",
+    "browserslist": "^4.21.0",
+    "del": "^6.1.1",
+    "file-system": "^2.2.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-purgecss": "^4.1.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-webp": "^4.0.1",
+    "imagemin-webp": "^7.0.0",
+    "npm-check-updates": "^14.0.1",
+    "postcss": "^8.4.14",
+    "replace": "^1.2.1",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "svgxuse": "^1.2.6",
+    "swiper": "^8.2.6"
+  },
+  "browserslist": [
+    "last 20 versions",
+    "> 1%",
+    "IE 10"
+  ]
+}

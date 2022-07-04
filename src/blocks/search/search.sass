@@ -1,0 +1,61 @@
+.search
+	padding: 80px 0
+	+md()
+		padding: 60px 0
+	+xs()
+		padding: 32px 0
+	.title
+		margin-bottom: 32px
+	&-form
+		&__filter
+			display: flex
+			flex-wrap: wrap
+		&__check
+			margin: 4px 16px 4px 0
+			span
+				border-radius: 50px
+				cursor: pointer
+				background-color: $white
+				display: block
+				padding: 8px 20px
+				border: 1px solid $white
+				font-size: 14px
+				+xs()
+					font-size: 12px
+				&:hover
+					border: 1px solid $accent
+
+			input
+				position: absolute
+				height: 1px
+				width: 1px
+				outline: none
+				&:checked + span
+					border-color: $accent
+		&__field
+			position: relative
+			display: block
+			margin-bottom: 18px
+		&__input
+			padding: 18px 50px 16px 24px
+			font-size: 18px
+			font-weight: 500
+			width: 100%
+			border-radius: 100px
+			background-color: $white
+			border: 2px solid #D7D7D7
+			+xs()
+				font-size: 16px
+			&::placeholder
+				color: #777
+		&__btn
+			top: 0
+			right: 0
+			position: absolute
+			background-repeat: no-repeat
+			background-position: center
+			height: 100%
+			width: 60px
+			cursor: pointer
+			border-radius: 50px
+			background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.74658 11.0586C4.74658 7.57263 7.57253 4.74667 11.0585 4.74667C14.5445 4.74667 17.3705 7.57263 17.3705 11.0586C17.3705 12.7917 16.672 14.3617 15.5411 15.5024C15.5345 15.5086 15.5279 15.5149 15.5214 15.5214C15.515 15.5278 15.5086 15.5344 15.5024 15.5411C14.3617 16.672 12.7917 17.3706 11.0585 17.3706C7.57253 17.3706 4.74658 14.5446 4.74658 11.0586ZM16.0268 17.0874C14.6766 18.2014 12.9457 18.8706 11.0585 18.8706C6.74411 18.8706 3.24658 15.373 3.24658 11.0586C3.24658 6.7442 6.74411 3.24667 11.0585 3.24667C15.3729 3.24667 18.8705 6.7442 18.8705 11.0586C18.8705 12.9457 18.2014 14.6765 17.0874 16.0267L20.5337 19.473C20.8266 19.7659 20.8266 20.2408 20.5337 20.5337C20.2408 20.8266 19.766 20.8266 19.4731 20.5337L16.0268 17.0874Z' fill='%236C89A9'/%3E%3C/svg%3E%0A")

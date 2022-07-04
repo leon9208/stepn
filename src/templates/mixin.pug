@@ -1,0 +1,36 @@
+include ../blocks/lang/lang.pug
+
+mixin picJpg(image, altTag, iClass, iWidth, iHeight)
+  picture
+    source(srcset="img/"+image+".webp" type="image/webp")
+    source(srcset="img/"+image+".jpg" type="image/jpeg")
+    img(class=iClass src="img/"+image+".jpg" height=iHeight width=iWidth alt=altTag)
+
+mixin picPng(image, altTag, iClass, iWidth, iHeight)
+  picture
+    source(srcset="img/"+image+".webp" type="image/webp")
+    source(srcset="img/"+image+".png" type="image/png")
+    img(class=iClass src="img/"+image+".png" height=iHeight width=iWidth alt=altTag)
+
+mixin picMediaPng(image, altTag, iClass, iWidth, iHeight)
+  picture
+    source(srcset="img/"+image+"-sm.webp" type="image/webp" media="(max-width: 780px)")
+    source(srcset="img/"+image+".webp" type="image/webp" media="(min-width: 781px)")
+    source(srcset="img/"+image+"-sm.png" type="image/png" media="(max-width: 780px)")
+    source(srcset="img/"+image+".png" type="image/png" media="(min-width: 781px)")
+    img(class=iClass src="img/"+image+".png" alt=altTag)
+
+mixin picMediaJpg(image, altTag)
+  picture
+    source(srcset="img/"+image+"-small.webp" type="image/webp" media="(max-width: 560px)")
+    source(srcset="img/"+image+"-medium.webp" type="image/webp" media="(max-width: 780px)")
+    source(srcset="img/"+image+"-large.webp" type="image/webp" media="(min-width: 780px)")
+    source(srcset="img/"+image+"-small.jpg" type="image/jpg" media="(max-width: 560px)")
+    source(srcset="img/"+image+"-medium.jpg" type="image/jpg" media="(max-width: 780px)")
+    source(srcset="img/"+image+"-large.jpg" type="image/jpg" media="(min-width: 780px)")
+    img(src="img/"+image+".jpg" alt=altTag)
+
+mixin xlink(svg)
+  i(class="icon icon-"+svg+"")
+    svg
+      use(xlink:href="img/sprite.svg#icon-"+svg+"")

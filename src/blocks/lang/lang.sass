@@ -1,0 +1,46 @@
+.lang
+	position: relative
+	&--header
+		.lang-list
+			top: 100%
+	&--footer
+		.lang-list
+			bottom: 100%
+	&-current
+		background-color: #FBFBFB
+		border-radius: 50px
+		height: 32px
+		width: 32px
+		text-align: center
+		line-height: 32px
+		font-weight: 300
+		font-size: 14px
+		cursor: pointer
+		&:hover
+			& ~ .lang-list
+				display: block
+	&-list
+		position: absolute
+		right: 0
+		left: 50%
+		transform: translateX(-50%)
+		width: 100%
+		background-color: #fff
+		font-weight: 300
+		font-size: 14px
+		text-decoration: none
+		border-radius: 3px
+		display: none
+		box-shadow: 0 0 5px rgba(#ccc, 0.2)
+		&:hover
+			display: block
+	&-link
+		display: block
+		text-decoration: none
+		font-weight: 300
+		font-size: 14px
+		text-align: center
+		padding: 5px 0
+		color: $black
+		&:hover
+			background-color: #FBFBFB

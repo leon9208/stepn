@@ -1,0 +1,20 @@
+section.search.bg-gray
+	.container
+		h2.title.title--center Как мы можем помочь вам?
+		form.search-form
+			label.search-form__field
+				input.search-form__input(type="text" placeholder="Задайте ваш вопрос" required)
+				button.search-form__btn(type="submit")
+			.search-form__filter
+				label.search-form__check
+					input(type="radio" name="search-filter" value="all" checked)
+					span Искать везде
+				label.search-form__check
+					input(type="radio" name="search-filter" value="stepn")
+					span Stepn
+				label.search-form__check
+					input(type="radio" name="search-filter" value="aivix")
+					span Aivix
+				label.search-form__check
+					input(type="radio" name="search-filter" value="other")
+					span Other

@@ -1,0 +1,14 @@
+header.header#top
+	.container
+		.row.header__row
+			.col-auto
+				a.logo(href="#")
+					span.logo__text Move2Earn
+			.col-auto
+				include ../nav/nav.pug
+			.col-auto.ml-auto
+				+lang('lang--header')
+			.col-auto
+				include ../login/login.pug
+			.col-auto
+				a.btn.btn--accent(href="#") Регистрация

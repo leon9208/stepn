@@ -1,0 +1,26 @@
+.btn
+	display: flex
+	align-items: center
+	justify-content: center
+	text-decoration: none
+	font-size: 14px
+	padding: 10px 16px
+	font-weight: 300
+	border-radius: 100px
+	+xs()
+		padding: 8px 16px
+	&--light
+		background-color: #fff
+	&--accent
+		color: $black
+		background: $gr
+		&:hover
+			background: $grHover
+	&__icon
+		height: 21px
+		width: 21px
+		background: no-repeat
+		background-position: center
+		background-size: contain
+		flex: none
+		margin-right: 8px

@@ -1,0 +1,25 @@
+include mixin.pug
+block vars
+	- var title = 'Title';
+	- var description = 'Description';
+	- var company = 'Company name';
+	- var phone = '+7 800 555-55-55';
+	- var phoneLink = 'tel:'+phone.replace(/[-/ /]/g,'');
+	- var email = 'info@mysite.ru';
+	- var emailLink = 'mailto:'+email+'';
+doctype html
+html(lang='ru', class="no-js")
+	include head
+	body
+		//Header
+		include ../blocks/header/header.pug
+		//End Header
+		//Main
+		main.main
+			block content
+		//End Main
+		//footer
+		include ../blocks/footer/footer.pug
+		//End footer
+		script(src="js/swiper-bundle.min.js")
+		script(src="js/scripts.js")
