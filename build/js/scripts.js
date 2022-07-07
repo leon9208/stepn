@@ -4,6 +4,7 @@ var _Swiper;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//btn
 //about-slider
 var aboutSlider = new Swiper(".about-slider .swiper", (_Swiper = {
   // slidesPerView: 3,
@@ -36,7 +37,8 @@ var aboutSlider = new Swiper(".about-slider .swiper", (_Swiper = {
     slidesPerView: 3,
     spaceBetween: 30
   }
-}), _Swiper)); //btn
+}), _Swiper)); //faq
+//informer
 //lang
 //login
 //pagination

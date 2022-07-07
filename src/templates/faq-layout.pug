@@ -1,0 +1,54 @@
+include mixin.pug
+block vars
+	- var title = 'Title';
+	- var description = 'Description';
+	- var company = 'Company name';
+	- var phone = '+7 800 555-55-55';
+	- var phoneLink = 'tel:'+phone.replace(/[-/ /]/g,'');
+	- var email = 'info@mysite.ru';
+	- var emailLink = 'mailto:'+email+'';
+doctype html
+html(lang='ru')
+	include head
+	body
+		//Header
+		include ../blocks/header/header.pug
+		//End Header
+		//Main
+		main.main
+			//search
+			include ../blocks/search/search.pug
+			//End search
+			section.section
+				.container
+					.informer
+						.row.informer__row
+							.informer-content.col-auto
+								.informer-content__icon(style="background-image: url(img/icon-lightning.svg)")
+								span.informer__text Подпишись на канал, 
+									br
+									| и будь в курсе последних новостей
+							.col-auto.informer-side
+								a.btn.btn--light(href="#") 
+									i.btn__icon(style="background-image: url(img/icon-telegram.svg)")
+									span.btn__text Подпишись
+					block content
+					.informer
+						.row.informer__row
+							.informer-content.col
+								.informer-content__icon(style="background-image: url(img/icon-heart.svg)")
+								span.informer__text Мы тратим много сил и денег, чтобы этот сервис оставался бесплатным. Пожалуйста, поддержите нас
+							.col-auto.informer-side
+								.informer-icon(style="background-image: url(img/informer-icon-1.svg)")
+								.informer-icon(style="background-image: url(img/informer-icon-2.svg)")
+								.informer-icon(style="background-image: url(img/informer-icon-3.svg)")
+								.informer-icon(style="background-image: url(img/informer-icon-4.svg)")
+			//about
+			include ../blocks/about/about.pug
+			//End about
+		//End Main
+		//footer
+		include ../blocks/footer/footer.pug
+		//End footer
+		script(src="js/swiper-bundle.min.js")
+		script(src="js/scripts.js")
