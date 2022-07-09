@@ -43,6 +43,7 @@ var paths = {
 		libsJS: [
 			// './node_modules/svgxuse/svgxuse.min.js', 
 			'./node_modules/swiper/swiper-bundle.min.js', 
+			'./node_modules/lazysizes/lazysizes.min.js', 
 			'./src/libs/*.js'],
 		src: ['./src/blocks/**/*.js'],
 		dest: './build/js',

@@ -1,0 +1,24 @@
+extends ../templates/faq-layout.pug
+block vars
+	- var title = 'Заголовок раздела помощи';
+	- var description = 'Description';
+block content
+	.row.justify-content-between
+		.col-auto
+			h1.title Заголовок раздела помощи
+		.col-auto.d-none.d-md-block
+			+pagination()
+	.wrapper-bd.faq-partition
+		ul.faq-partition__list
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+			+faqPartition()
+	.row.justify-content-center
+		.col-auto.mb-4
+			+pagination()
