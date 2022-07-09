@@ -1,18 +1,20 @@
 header.header
 	.header__desctop
 		.container
-			.row.header__row
+			.d-flex.header__row
 				.col-auto
 					a.logo(href="/")
 						span.logo__text Move2Earn
-				.col-auto
+				.col
 					include ../nav/nav.pug
 				.col-auto.ml-auto
-					+lang('lang--header')
-				.col-auto
-					include ../login/login.pug
-				.col-auto
-					a.btn.btn--accent(href="#") Регистрация
+					.row
+						.col-auto.ml-auto
+							+lang('lang--header')
+						.col-auto
+							include ../login/login.pug
+						.col-auto
+							a.btn.btn--accent(href="#") Регистрация
 	.header__mobile
 		.container
 			.row.header__row

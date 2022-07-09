@@ -1,11 +1,25 @@
 .nav
-	&-list
+	flex: none
+	margin-left: 30px
+	&-dropdown
+		padding-top: 10px
+		position: absolute
+		right: 0
+		top: 100%
+		background-color: #fff
+		border: 1px solid #000
+	&-wrapper
+		width: 100%
+		max-width: 580px
+	ul
+		display: inline-block
 		list-style: none
-		display: flex
-		align-items: center
-	&-item
-		padding: 0 20px
-	&-link
+	li
+		display: inline-block
+		padding: 0 15px
+	a
+		display: inline-block
+		white-space: nowrap
 		font-size: 14px
 		font-weight: 300
 		text-decoration: none
