@@ -1,14 +1,42 @@
-header.header#top
-	.container
-		.row.header__row
-			.col-auto
-				a.logo(href="#")
-					span.logo__text Move2Earn
-			.col-auto
-				include ../nav/nav.pug
-			.col-auto.ml-auto
-				+lang('lang--header')
-			.col-auto
-				include ../login/login.pug
-			.col-auto
-				a.btn.btn--accent(href="#") Регистрация
+header.header
+	.header__desctop
+		.container
+			.row.header__row
+				.col-auto
+					a.logo(href="/")
+						span.logo__text Move2Earn
+				.col-auto
+					include ../nav/nav.pug
+				.col-auto.ml-auto
+					+lang('lang--header')
+				.col-auto
+					include ../login/login.pug
+				.col-auto
+					a.btn.btn--accent(href="#") Регистрация
+	.header__mobile
+		.container
+			.row.header__row
+				.col-auto
+					a.logo(href="/")
+						span.logo__text Move2Earn
+				.col-auto.ml-auto
+					+lang('lang--header')
+				.col-auto
+					button.mobile-btn(type="button")
+						span
+		nav.mobile-nav
+			.container
+				ul.mobile-nav__list
+					li.mobile-nav__item
+						a.mobile-nav__link(href="#") Статьи
+					li.mobile-nav__item
+						a.mobile-nav__link(href="#") STEPN калькулятор
+					li.mobile-nav__item
+						a.mobile-nav__link.active(href="faq.html") Faq
+					li.mobile-nav__item
+						a.mobile-nav__link(href="#") Таблица Mint
+					li.mobile-nav__item
+						a.mobile-nav__link(href="#") Таблица уровней
+				.mb-2
+					include ../login/login.pug
+				a.btn.btn--accent.mb-2(href="#") Регистрация
