@@ -12,3 +12,9 @@ mixin select()
 			.select-item(data-value="Solana") 
 				i.select-item__icon(style="background-image: url(img/icon-solana.svg)")
 				span.select-item__text Solana
+
+mixin quantity()
+	.quantity
+		.quantity-btn.quantity-btn--left
+		input.quantity-input(type="number" name="quantity" min="1" max="9" step="1" value="8" disabled)
+		.quantity-btn.quantity-btn--right
