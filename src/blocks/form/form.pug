@@ -1,0 +1,14 @@
+//form
+mixin select()
+	.select
+		input.select-input(type="hidden" name="blockchain" value="BNB")
+		.select-current
+				i.select-item__icon(style="background-image: url(img/icon-bnb.svg)")
+				span.select-item__text BNB
+		.select-list
+			.select-item.isactive(data-value="BNB") 
+				i.select-item__icon(style="background-image: url(img/icon-bnb.svg)")
+				span.select-item__text BNB
+			.select-item(data-value="Solana") 
+				i.select-item__icon(style="background-image: url(img/icon-solana.svg)")
+				span.select-item__text Solana
