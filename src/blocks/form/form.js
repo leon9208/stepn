@@ -40,12 +40,30 @@ if (qty.length > 0) {
 			if (qtInputMin < parseFloat(qtInput.value)) {
 				qtInput.value = parseInt(qtInput.value) -1
 			}
-		})
+		});
 
 		qtAdd.addEventListener('click', ()=> {
 			if (parseFloat(qtInput.value) < qtInputMax) {
 				qtInput.value = parseInt(qtInput.value) +1
 			}
-		})
-	})
+		});
+
+		qt.addEventListener('focus', ()=> {
+			qt.classList.add('isfocused')
+			document.addEventListener('keyup', (e)=> {
+				if ( qt.classList.contains('isfocused') )
+				if(e.key === 'ArrowRight' || e.key === 'ArrowRight') {
+					if (parseFloat(qtInput.value) < qtInputMax) {
+						qtInput.value = parseInt(qtInput.value) +1
+					}
+				} else if (e.key === 'ArrowLeft' || e.key === 'ArrowLeft') {
+					if (qtInputMin < parseFloat(qtInput.value)) {
+						qtInput.value = parseInt(qtInput.value) -1
+					}
+				}
+			})
+		});
+
+		qt.addEventListener('blur', ()=> { qt.classList.remove('isfocused') });
+	});
 };
