@@ -52,11 +52,11 @@ if (qty.length > 0) {
 			qt.classList.add('isfocused')
 			document.addEventListener('keyup', (e)=> {
 				if ( qt.classList.contains('isfocused') )
-				if(e.key === 'ArrowRight' || e.key === 'ArrowRight') {
+				if(e.key === 'ArrowRight' || e.key === 'ArrowUp') {
 					if (parseFloat(qtInput.value) < qtInputMax) {
 						qtInput.value = parseInt(qtInput.value) +1
 					}
-				} else if (e.key === 'ArrowLeft' || e.key === 'ArrowLeft') {
+				} else if (e.key === 'ArrowLeft' || e.key === 'ArrowDown') {
 					if (qtInputMin < parseFloat(qtInput.value)) {
 						qtInput.value = parseInt(qtInput.value) -1
 					}
